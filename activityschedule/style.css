@@ -1,0 +1,107 @@
+h1{
+    text-align: center; 
+    color:blue;
+}
+
+#line{
+    height: 5px;
+    background-color:#AAFFEE;
+    /*上述樣式在HTML內為:
+    <hr size="5" color="#AAFFEE"/>  COLOR不能用rgb*/
+    border: 0px;
+}
+
+input{
+    margin: 10px 30px 5px;
+    color: aqua;
+} 
+#date{  
+    margin: 10px 30px 5px;
+    color: black;
+} 
+/* 
+HTML id="XXX" (id="date") > CSS #XXX (#date)
+HTML class="XXX"( class="button") > CSS 標籤.XXX (input.button)
+*/
+input.button{ 
+    /*以下整串在HTML內為:  
+    <div style="left:260px; position:relative"> 在div與/div內的物件進行位置設定
+    <input style="color:navy; width:80PX; height:30PX; font-weight:bold">
+    </div>
+    */
+    color:navy;
+    width:80px; /*長*/
+    height:40px;
+    font-weight: bold; /*文字字體,粗體*/
+    left: 260px;
+    position: relative;
+    /*position(宣告位置為):absolute(畫面上的絕對位置) relative(原本位置的相對位置)*/
+}
+
+table{
+    width: 500px; 
+    margin: 20px auto; /*邊界*/
+    font-size: 1.2em;
+}
+
+th{
+    text-align: center;
+    border: 5px #00ff00; /* border(邊框) : 寬度(可不填);樣式(必填);顏色(可不填) */
+    border-style: dashed solid;
+    padding: 10px 5% ; /* 框距 */
+}
+
+td{
+    text-align: center;
+    border-bottom: 8px dotted pink;
+    border-top: 6PX double rgb(255,0,255);
+    border-left: 10PX inset #ff0090;
+    border-right:ridge;
+    padding: 5% 20px 15px;
+    /* border-上or下or左or右 : 寬度(可不填);樣式(必填);顏色(可不填) */
+}
+
+td.even{ /*td.even內未設定的部分均會仿造 td 內已設定的部分 */
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    border-width: 15px 5px; 
+    border-style: hidden dashed; 
+    padding: 5% 20px 15px 1px;
+}
+
+/* 
+在main.js內加上 "<td style=\"CSS語法;CSS語法....\">" 有相同效果 
+EX:".append(<td style=\"border-width: 15px 5px ; padding: 5% 20px 15px 1px\">"+"</td>") 
+*/
+
+
+/*
+border-top-width:   只能用px
+border-right-width:
+border-bottom-width:
+border-left-width:
+border-width:10px 9px 8px 7px (上;右;下;左) 一並設
+border-width:10px 9px 8px (上;左右;下) 
+border-width:10px 9px (上下;左右)
+border-width:10px (四邊相同)
+
+border-style:  (同上一並設)
+border-top-style: (同上)
+border-right-style: (同上)
+border-bottom-style: (同上)
+border-left-style: (同上)
+
+padding-top:    可以使用px或%
+padding-right:
+padding-bottom:
+padding-left:
+padding:10% 9px 8% 7px (上;右;下;左)
+padding:10px 9% 8px (上;左右;下) 
+padding:10px 9% (上下;左右)
+padding:10px (四邊相同)
+*/
+
+
+
+
+

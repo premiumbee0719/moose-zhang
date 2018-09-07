@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Club Course</title> <!--網頁標籤上的標題-->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> <!--Jquery的語法-->
+    </script>
+    <script src="topic.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <H1>
+    <u>每周班級自由活動規劃表</u>
+    </H1>
+    
+    <hr/>
+
+    <div> <!-- 設一個區塊-->
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;設定開始日期</h3>
+        <input type="date" id="date"> 
+        <!-- type="date"日期選擇器 在這設置CLASS才有辦法在style.css內作設定-->
+    </div>
+
+    <H3 align="left">
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;輸入您想規劃的活動
+    <br>
+    </H3>
+            
+    <tr>
+        <td>
+            <!--type="test"文字型態--> <!--placeholder 提示訊息-->
+            <input type="test" size="30" placeholder="&nbsp;活動項目" ><br>
+            <input type="test" size="30" placeholder="&nbsp;活動項目" ><br>
+            <input type="test" size="30" placeholder="&nbsp;活動項目" ><br>
+            
+            <div style=display:none;>
+            <input type="test" size="30" placeholder="&nbsp;活動項目" ><br>    
+            </div>
+           
+        </td>
+
+            <input type="button" value="提交" class="button"> 
+    </tr>
+    
+    <p></p> <!--分段-->
+    
+    <hr/>
+    
+    <tr>
+        <table id="courseTable"></table>
+    <tr/>
+    
+</body>
+</html>
