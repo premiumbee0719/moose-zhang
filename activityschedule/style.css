@@ -11,9 +11,9 @@ h1{
     border: 0px;
 }
 
-input{
+#test{
     margin: 10px 30px 5px;
-    color: aqua;
+    color: navy;
 } 
 #date{  
     margin: 10px 30px 5px;
@@ -49,6 +49,19 @@ th{
     border: 5px #00ff00; /* border(邊框) : 寬度(可不填);樣式(必填);顏色(可不填) */
     border-style: dashed solid;
     padding: 10px 5% ; /* 框距 */
+}
+
+#example{
+    color: darkgrey;
+}
+
+#example2{
+    color: darkgrey;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    border-width: 15px 5px; 
+    border-style: hidden dashed; 
+    padding: 5% 20px 15px 1px;
 }
 
 td{

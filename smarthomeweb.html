@@ -11,7 +11,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="lovetest/style.css" rel="stylesheet">
+    <link href="smarthomeweb/style.css" rel="stylesheet">
       
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
@@ -35,18 +35,18 @@
             <li class="nav-item">
               <a class="nav-link" href="activityschedule.html">每週一樂</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">戀愛測驗</a>
+            <li class="nav-item">
+              <a class="nav-link" href="lovetest.html">戀愛測驗</a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item">
               <a class="nav-link" href="webgame.html">遊戲九宮格</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="youtubeplayervideo.html">聽聽</a>
-            </li>     
-            <li class="nav-item">
-              <a class="nav-link" href="smarthomeweb.html">智慧家電</a>
-            </li>    
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">智慧家電</a>
+            </li> 
           </ul>
           <form class="form-inline mt-2 mt-md-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -69,17 +69,29 @@
         <!-- START THE FEATURETTES -->
 
         <hr class="featurette-divider">
-           
-        <h1><u>2018,你的愛情是什麼滋味?</u></h1>
-    
-        <div> <!-- 設一個區塊-->
-            <h2 id="question"></h2>
-            <div id="options"></div>
-        </div>
-    
-        <input id="startButton" type="button" value="開始作答"> 
         
-        </div>  
+    <div class="row featurette">
+        <div class="col-md-7">    
+            <iframe
+                allow="microphone;"
+                width="500"
+                height="700"
+                src="https://console.dialogflow.com/api-client/demo/embedded/e4b623f7-2162-4b8d-ad29-77a103530fb5">
+            </iframe>
+        </div>
+     <br>    
+        <div class="col-md-5"> 
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <br>
+            <br>
+            <h1>電燈狀態:?</h1><br>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+                <!--span 標籤是一個＂區域＂形態-->
+            </label>  
+        </div>
+    </div>
           
         <hr class="featurette-divider">
         
@@ -96,13 +108,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="assets/js/vendor/popper.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>
-    <script src="lovetest/data.js"></script>
-    <script src="lovetest/main.js"></script>
+    <script src="smarthomeweb/main.js"></script>
   </body>
 </html>

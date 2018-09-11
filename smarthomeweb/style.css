@@ -1,0 +1,60 @@
+body{
+    text-align: center;
+}
+.switch {
+  position: relative;/*宣告位置為畫面上原本位置的相對位置*/
+  display: inline-block;/*區塊水平排列*/
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;/*宣告位置為畫面上的絕對位置*/
+  cursor: pointer; /*游標變化*/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s; 
+    /*Safari 和 Chrome 的過度效果0.4秒 */
+  transition: .4s;
+    /*過度效果*/
+}
+
+.slider:before { /*灰色狀態下白方形*/
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px; /*離左邊4PX*/
+  bottom: 4px; /*離下面4PX*/
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

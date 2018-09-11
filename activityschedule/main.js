@@ -14,8 +14,8 @@ $(document).ready(function(){
     $("#courseTable").append("</tr>");
     /*上述5行等於$("#courseTable").append("<tr><th>場次</th><th>時間</th><th>主題</th></tr>") 
     PS:""內的值不能斷行*/
-    $("#courseTable").append("<tr><td>1</td><td>2018/10/10</td><td>活動項目</td></tr>"); 
-    $("#courseTable").append("<tr><td class='even'>2</td class='even'><td class='even'>2018/10/17</td><td class='even'>活動項目</td></tr>"); 
+    $("#courseTable").append("<tr><td id='example'>1</td><td id='example'>Ex:2018/10/10</td><td id='example'>Ex:活動項目</td></tr>"); 
+    $("#courseTable").append("<tr><td id='example2'>2</td><td id='example2'>Ex:2018/10/17</td><td id='example2'>Ex:活動項目</td></tr>"); 
     
     
     
@@ -35,8 +35,8 @@ $(document).ready(function(){
         else{
             $("#courseTable").empty();
             $("#courseTable").append("<tr><th>場次</th><th>時間</th><th>主題</th></tr>");
-            $("#courseTable").append("<tr><td>1</td><td>2018/10/10</td><td>活動項目</td></tr>"); 
-            $("#courseTable").append("<tr><td class='even'>2</td class='even'><td class='even'>2018/10/17</td><td class='even'>活動項目</td></tr>"); 
+            $("#courseTable").append("<tr><td id='example'>1</td><td id='example'>Ex:2018/10/10</td><td id='example'>Ex:活動項目</td></tr>"); 
+            $("#courseTable").append("<tr><td id='example' class='even'>2</td class='even'><td id='example' class='even'>Ex:2018/10/17</td><td id='example' class='even'>Ex:活動項目</td></tr>"); 
          }
     });
 });    
