@@ -1,0 +1,193 @@
+#background{
+    background-image: url("css3practice/images/grass_blue_sky_background.jpg");
+    background-size: cover; /*背景尺寸 延展*/
+    background-position: center; /*背景位置 置中*/
+    position: absolute ; /*不設絕對位置的話 圖出不來*/
+    width: 100%;
+    height: 100%;
+    display: block; /*版面配置中最重要的屬性 區塊元素*/
+}
+
+#sun{
+    width: 200PX;
+    height: 200PX;
+    background-color: yellow;
+    border: 12px dashed #FFFFBB;
+    text-align: center;
+    border-radius: 50%; /*圓角邊框*/
+    position: absolute;
+        top: 100px;
+        left: 10px;
+    /*box-shadow: 5px 5px #FFFFBB;*/
+}
+
+#sun:hover{
+    width: 400px;
+    height: 400px;
+    transition: 1s; /*過渡(漸漸變化) 變化時間*/
+}
+
+#bird1{
+    width: 5%;
+    height: 6%x;
+    position: absolute;
+        top: 68%;
+        left: 50%;
+    transform: rotate(30deg); /*選轉*/
+    animation-name: bird1; /*動畫命名*/
+    animation-duration: 1s; /*撥放長度*/
+    animation-iteration-count: infinite; /*播放次數*/
+}
+@keyframes bird1{ /*動畫變化*/
+    0% {transform: rotate(30deg);}
+    25% {transform: rotate(45deg);}
+    50% {transform: rotate(45deg);}
+    75% {transform: rotate(30deg);}
+    100% {transform: rotate(30deg);}
+}
+
+#bird2{
+    width: 8%;
+    height: 9%;
+    position: absolute;
+        top: 5%;
+        left: -10%;
+    animation-name: bird2; /*動畫命名*/
+    animation-duration: 10s; /*撥放長度*/
+    animation-iteration-count: infinite; /*播放次數*/
+}
+@keyframes bird2{ /*動畫變化*/
+    0%   {transform: rotate(90deg) ; top:5% ; left:-10% ;}
+    30%  {transform: rotate(0deg) ; top:53% ; left:25% ;}
+    60%  {transform: rotate(0deg) ; top:53% ; left:34% ;}
+    70%  {transform: rotate(30deg) ; top:53% ; left:34% ;}
+    100% {transform: rotate(10deg) ; top:5% ; left:100% ;}
+}
+
+#cow1{
+    width: 26%;
+    height: 30%;
+    position: absolute;
+        top: 55%;
+        left: 17%;
+}
+#cow2{
+    width: 4%;
+    height: 5%;
+    position: absolute;
+        top: 60%;
+        left: 92%;
+}
+#cow3{
+    width: 6%;
+    height: 7.25%;
+    position: absolute;
+    transform:scaleX(-1); /*圖片水平翻轉*/
+        top: 57%;
+        left: -10%;
+    animation-name: cow3; /*動畫命名*/
+    animation-duration: 40s; /*撥放長度*/
+    animation-iteration-count: infinite; /*播放次數*/
+}
+@keyframes cow3{
+    0%   {transform: top:57% ; left:-10% ;}
+    20%  {transform: top:48% ; left:5% ;}
+    40%  {transform: scaleX(-1) ; top:55% ; left:20% ;}
+    50%  {transform: scaleX(-1) ; top:65% ; left:25% ;}
+    55%  {transform: scaleX(1) ; top:70% ; left:22% ;}
+    100% {transform: scaleX(1) ; top:70% ; left:-10% ;}
+}
+       
+
+#tower{
+    width: 25%;
+    height: 35%;
+    position: absolute;
+        top: 40%;
+        left: 53%;
+}
+
+#clip{
+    width: 35%;
+    height: 35%;
+    position: absolute;
+        top: 30%;
+        left: 48%;
+    animation-name: clip; /*動畫命名*/
+    animation-duration: 6s; /*撥放長度*/
+    animation-iteration-count: infinite; /*播放次數*/
+}
+@keyframes clip{ /*動畫變化*/
+    0%   {transform: rotate(0deg);}
+    12%  {transform: rotate(45deg);}
+    25%  {transform: rotate(90deg);}
+    38%  {transform: rotate(135deg);}
+    50%  {transform: rotate(180deg);}
+    62%  {transform: rotate(225deg);}
+    75%  {transform: rotate(270deg);}
+    88%  {transform: rotate(315deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#fence1{/*8:6*/
+    width: 32%;
+    height: 24%;
+    position:absolute;
+        top: 79%;
+        left: 0.5%;  
+}
+#fence2{
+    width: 32%;
+    height: 24%;
+    position: absolute;
+        top: 79%;
+        left: 34%;  
+}
+#fence3{
+    width: 32%;
+    height: 24%;
+    position: absolute;
+        top: 79%;
+        left: 68%;  
+}
+
+#box1{
+    width: 200px;
+    height: 100px;
+    background-color: beige;
+    border: 5px dashed gray;
+    text-align: center; 
+    border-radius: 10px 500px;
+    box-shadow: 20px 20px #888888;
+    transform: rotate(0deg);
+}
+#box2{
+    width: 200px;
+    height: 100px;
+    background-color: beige;
+    border: 5px dashed gray;
+    text-align: center; 
+    border-radius: 10px 500px;
+    box-shadow: 20px 20px #888888;
+    transform: rotate(270deg);
+}
+#box3{
+    width: 200px;
+    height: 100px;
+    background-color: beige;
+    border: 5px dashed gray;
+    text-align: center; 
+    border-radius: 10px 500px;
+    box-shadow: 20px 20px #888888;
+    transform: rotate(90deg);
+}
+#box4{
+    width: 200px;
+    height: 100px;
+    background-color: beige;
+    border: 5px dashed gray;
+    text-align: center; 
+    border-radius: 10px 500px;
+    box-shadow: 20px 20px #888888;
+    transform: rotate(180deg);
+}
