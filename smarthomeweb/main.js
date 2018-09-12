@@ -1,7 +1,7 @@
 $(document).ready(function(){
     getLightSwitchStatus();
 });
-//setInterval(function(){ ;}, 3000);
+//setInterval(function getLightSwitchStatus(){ ;}, 3000); 每3秒存取一次
 
 function getLightSwitchStatus(){
         var url = "https://sheetdb.io/api/v1/5b97b4c970cc1/search?";
