@@ -1,11 +1,10 @@
 #background{
-    background-image: url("css3practice/images/grass_blue_sky_background.jpg");
-    background-size: cover; /*背景尺寸 延展*/
-    background-position: center; /*背景位置 置中*/
-    position: absolute ; /*不設絕對位置的話 圖出不來*/
+    background-size: cover; /*背景-尺寸 延展*/
+    background-position: center; /*背景-位置 置中*/
+    position: absolute ; /*位置-絕對；不設的話,圖出不來*/
     width: 100%;
     height: 100%;
-    display: block; /*版面配置中最重要的屬性 區塊元素*/
+    display: block; /*顯示-分段(區塊):版面配置中最重要的屬性 區塊元素*/
 }
 
 #sun{
@@ -21,7 +20,7 @@
     /*box-shadow: 5px 5px #FFFFBB;*/
 }
 
-#sun:hover{
+#sun:hover{/*徘徊(游標指上)*/
     width: 400px;
     height: 400px;
     transition: 1s; /*過渡(漸漸變化) 變化時間*/
@@ -33,10 +32,10 @@
     position: absolute;
         top: 68%;
         left: 50%;
-    transform: rotate(30deg); /*選轉*/
-    animation-name: bird1; /*動畫命名*/
-    animation-duration: 1s; /*撥放長度*/
-    animation-iteration-count: infinite; /*播放次數*/
+    transform: rotate(30deg); /*轉變-旋轉*/
+    animation-name: bird1; /*動畫-命名*/
+    animation-duration: 1s; /*動畫-持續時間(撥放長度)*/
+    animation-iteration-count: infinite; /*動畫-反覆-播放次數*/
 }
 @keyframes bird1{ /*動畫變化*/
     0% {transform: rotate(30deg);}
@@ -56,7 +55,7 @@
     animation-duration: 10s; /*撥放長度*/
     animation-iteration-count: infinite; /*播放次數*/
 }
-@keyframes bird2{ /*動畫變化*/
+@keyframes bird2{ /*關鍵 幀(幀率:每秒顯示張數) 動畫變化*/
     0%   {transform: rotate(90deg) ; top:5% ; left:-10% ;}
     30%  {transform: rotate(0deg) ; top:53% ; left:25% ;}
     60%  {transform: rotate(0deg) ; top:53% ; left:34% ;}
